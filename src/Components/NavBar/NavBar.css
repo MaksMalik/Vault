@@ -74,28 +74,30 @@
   }
 
   .navbar_navigation_element_mobile {
-    border-radius: 50px;
+    border-radius: 20px;
     width: 50px;
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-    background-color: white;
+    background-color: #7ef2fa54;
+    border: 1px solid #020940;
+    box-shadow: 0px 0px 10px 1px #020940;
   }
 
   .download {
-    background-image: url("https://i.ibb.co/FbSfZSd/downloading.png");
+    background-image: url("https://i.ibb.co/crnXBkW/downloading-1.png");
   }
 
   .questionMark {
-    background-image: url("https://i.ibb.co/T2N0PMb/question.png");
+    background-image: url("https://i.ibb.co/y5DVBF3/question-1.png");
   }
 
   .prices {
-    background-image: url("https://i.ibb.co/N73xmzQ/dollar.png");
+    background-image: url("https://i.ibb.co/y8drhXd/dollar-1.png");
   }
 
   .contact {
-    background-image: url("https://i.ibb.co/g6ZJhfJ/email.png");
+    background-image: url("https://i.ibb.co/qsp0LqT/email-1.png");
   }
 }
