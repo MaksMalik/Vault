@@ -1,0 +1,41 @@
+.getStarted {
+  background-image: url("https://i.ibb.co/dbPhQBC/backgroundv1.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStarted_title {
+  text-align: center;
+  padding: 20px;
+  font-family: fussionregular;
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 20px;
+}
+
+.getStarted_button {
+  font-family: fussionregular !important;
+  font-size: 22px !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.getStarted_subTitle1 {
+  text-align: center;
+  padding: 10px;
+  font-family: fussionregular;
+  color: rgba(255, 255, 255, 0.486);
+  font-size: 13px;
+}
+
+.getStarted_subTitle2 {
+  text-align: center;
+  padding: 10px;
+  font-family: fussionregular;
+  color: rgba(255, 255, 255, 0.486);
+  font-size: 8px;
+}

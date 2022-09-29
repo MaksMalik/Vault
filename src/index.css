@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'fussionregular';
+  src: url('./fonts/fussion-3zgaz-webfont.woff2') format('woff2'),
+    url('./fonts/fussion-3zgaz-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section::-webkit-scrollbar {
+  width: 16px;
+}
+
+.section::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #020940 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #020940;
+  border-radius: 0px;
+  border: 3px none #ffffff;
+}

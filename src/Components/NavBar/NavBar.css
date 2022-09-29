@@ -1,0 +1,101 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  padding: 40px 0 40px 0;
+}
+
+.navbar_title {
+  font-family: fussionregular;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 0 20px 0 40px;
+  cursor: default;
+}
+
+.navbar_navigation {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px 0 20px;
+}
+
+.navbar_navigation_mobile {
+  display: none;
+}
+
+.navbar_navigation_element {
+  font-family: fussionregular;
+  color: rgba(255, 255, 255, 0.678);
+  padding: 10px 10px 10px 10px;
+  font-size: 10px;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+
+.navbar_navigation_element:hover {
+  color: white;
+  transition-duration: 300ms;
+}
+
+.navbar_navigation_element:hover::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(41, 131, 190, 0.678);
+  display: block;
+  top: 20px;
+  position: relative;
+  transition-duration: 300ms;
+}
+
+@media only screen and (max-width: 772px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 88vh;
+  }
+
+  .navbar_navigation {
+    display: none;
+  }
+
+  .navbar_navigation_mobile {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+  }
+
+  .navbar_navigation_element_mobile {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: white;
+  }
+
+  .download {
+    background-image: url("https://i.ibb.co/FbSfZSd/downloading.png");
+  }
+
+  .questionMark {
+    background-image: url("https://i.ibb.co/T2N0PMb/question.png");
+  }
+
+  .prices {
+    background-image: url("https://i.ibb.co/N73xmzQ/dollar.png");
+  }
+
+  .contact {
+    background-image: url("https://i.ibb.co/g6ZJhfJ/email.png");
+  }
+}
