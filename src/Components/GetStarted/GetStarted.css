@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.getStarted_button Button a {
+  text-decoration: none;
+
+}
+
+
 .getStarted_title {
   text-align: center;
   padding: 20px;
@@ -41,4 +47,14 @@
   color: rgba(255, 255, 255, 0.486);
   font-size: 8px;
   cursor: default;
+}
+
+
+.getStarted_image1 {
+  height: 150px;
+  width: 150px;
+  background-image: url("https://i.ibb.co/TwZstQg/rm373batch3-banner-05-ai.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
 }

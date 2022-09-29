@@ -3,9 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  padding: 100px 0 100px 0;
 }
 
-.HowItWorks_image {
+.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
+.HowItWorks_image2 {
   height: 472px;
   width: 728px;
   background-image: url("https://i.ibb.co/F473rNt/556-ai.png");
@@ -14,22 +26,57 @@
   background-position: center top;
 }
 
+.HowItWorks_image1 {
+  width: 40vw;
+  height: 100%;
+  background-image: url("https://i.ibb.co/4s2hK9K/14622-ai.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .HowItWorks_image1 {
+    width: 50vw;
+    height: 100%;
+  }
+}
+
 @media only screen and (max-width: 772px) {
-  .HowItWorks_image {
+  .HowItWorks_image1 {
+    width: 60vw;
+    height: 100%;
+  }
+
+  .HowItWorks_image2 {
     height: 300px;
     width: 500px;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  .HowItWorks_image {
+  .HowItWorks_image1 {
+    width: 90vw;
+    height: 100%;
+  }
+
+  .HowItWorks_image2 {
     height: 250px;
     width: 400px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .HowItWorks_image {
+  .HowItWorks_image1 {
+    width: 80vw;
+    height: 100%;
+  }
+
+  .HowItWorks_image2 {
     height: 250px;
     width: 300px;
   }

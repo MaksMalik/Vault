@@ -62,6 +62,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 88vh;
+    z-index: 1;
   }
 
   .navbar_navigation {
@@ -74,7 +75,7 @@
     width: 100%;
     position: fixed;
     bottom: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .navbar_navigation_element_mobile {
@@ -95,12 +96,11 @@
     background-image: url("https://i.ibb.co/y5DVBF3/question-1.png");
   }
 
-  .prices {
+  .price {
     background-image: url("https://i.ibb.co/y8drhXd/dollar-1.png");
   }
 
   .contact {
     background-image: url("https://i.ibb.co/fGH46zD/email-2.png");
-
     }
   }
