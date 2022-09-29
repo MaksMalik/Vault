@@ -73,19 +73,18 @@
     justify-content: space-evenly;
     width: 100%;
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
+    opacity: 0.8;
   }
 
   .navbar_navigation_element_mobile {
-    border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    border-radius: 18px;
+    width: 40px;
+    height: 40px;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #7ef2fa54;
+    background-color: #7ef2fab7;
     border: 1px solid #020940;
-    box-shadow: 0px 0px 10px 1px #000000;
+    box-shadow: 0px 0px 5px 1px #000000;
   }
 
   .download {
@@ -101,6 +100,7 @@
   }
 
   .contact {
-    background-image: url("https://i.ibb.co/qsp0LqT/email-1.png");
+    background-image: url("https://i.ibb.co/fGH46zD/email-2.png");
+
+    }
   }
-}
