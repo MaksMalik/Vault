@@ -1,3 +1,45 @@
 .HowItWorks {
-  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HowItWorks_image {
+  height: 472px;
+  width: 728px;
+  background-image: url("https://i.ibb.co/F473rNt/556-ai.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+
+@media only screen and (max-width: 772px) {
+  .HowItWorks_image {
+    height: 300px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .HowItWorks_image {
+    height: 250px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .HowItWorks_image {
+    height: 250px;
+    width: 300px;
+  }
+}
+
+.HowItWorks_title {
+  text-align: center;
+  padding: 20px;
+  font: normal normal bold 16px Open Sans;
+  color: #020940;
+  font-size: 20px;
 }

@@ -5,8 +5,10 @@ export default function HowItWorks() {
   return (
     <>
       <div className='HowItWorks'>
-        <div className='HowItWorks'>Learn language with us</div>
-        <div className='button'>Button</div>
+
+        <div className='HowItWorks_image'/>
+        <div className='HowItWorks_title'>Proin nec ante eros. <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Nam accumsan sem ut accumsan commodo.</div>
+
       </div>
     
     </>
