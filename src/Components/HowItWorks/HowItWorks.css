@@ -1,5 +1,6 @@
 .HowItWorks {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -7,14 +8,25 @@
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
-  padding: 100px 0 100px 0;
+  scroll-snap-align: start;
+  overflow: hidden;
 }
 
-.anchor {
-  display: block;
-  position: relative;
-  top: -250px;
-  visibility: hidden;
+.HowItWorks_title-top {
+  text-align: center;
+  padding: 20px;
+  font: normal normal bold 26px Open Sans;
+  font-family: fussionregular;
+  color: #020940;
+  cursor: default;
+}
+
+.HowItWorks_title {
+  text-align: center;
+  padding: 20px;
+  font: bold 20px Open Sans;
+  color: #020940;
+  cursor: default;
 }
 
 .HowItWorks_image2 {
@@ -80,13 +92,4 @@
     height: 250px;
     width: 300px;
   }
-}
-
-.HowItWorks_title {
-  text-align: center;
-  padding: 20px;
-  font: normal normal bold 16px Open Sans;
-  color: #020940;
-  font-size: 20px;
-  cursor: default;
 }

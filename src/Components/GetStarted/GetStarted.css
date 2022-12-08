@@ -3,11 +3,13 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
+  overflow: hidden;
 }
 
 .getStarted_button Button a {
@@ -48,12 +50,13 @@
   color: rgba(255, 255, 255, 0.486);
   font-size: 8px;
   cursor: default;
+  
 }
 
 
 .getStarted_image1 {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   background-image: url("https://i.ibb.co/TwZstQg/rm373batch3-banner-05-ai.png");
   background-size: contain;
   background-repeat: no-repeat;
