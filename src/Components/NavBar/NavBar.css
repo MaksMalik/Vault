@@ -66,9 +66,11 @@
 @media only screen and (max-width: 768px) {
 
   ul {
+    top: 0;
     width: 70vw;
     border-right: 3px solid rgba(0, 0, 0, 0.548);
     gap: 30px;
+    position: absolute;
   }
 
   .PC {
@@ -167,9 +169,6 @@
     margin-bottom: 1.5rem;
   }
 
-  ul {
-    position: absolute;
-  }
 
   ul li a {
     font-size: 30px;
