@@ -4,14 +4,7 @@ import "./NavBar.css"
 export default function NavBar() {
   return (
     <>
-      <div className='navbar'>
-        <div className='navbar_title'>Connect</div>
-        <div className='navbar_navigation PC'>
-          <a href='#how'><div className='navbar_navigation_element'>How?</div></a>
-          <a href='#prices'><div className='navbar_navigation_element'>Prices</div></a>
-          <a href='#download'><div className='navbar_navigation_element'>Download</div></a>
-          <a href='#contact'><div className='navbar_navigation_element'>Contact</div></a>
-        </div>
+
 
         <nav className="navbarM" id='navbarMm'>
           <div className="navbar-container container navbar_navigation">
@@ -40,7 +33,6 @@ export default function NavBar() {
             </ul>
           </div>
         </nav>
-      </div>
     </>
   )
 }

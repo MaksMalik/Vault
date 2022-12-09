@@ -167,6 +167,10 @@
     margin-bottom: 1.5rem;
   }
 
+  ul {
+    position: absolute;
+  }
+
   ul li a {
     font-size: 30px;
   }
