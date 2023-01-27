@@ -4,7 +4,7 @@ import "./Prices.css"
 export default function Prices() {
   return (
     <>
-      <div className='prices' id='prices'>
+      <div className='prices section' id='prices'>
 
 
 

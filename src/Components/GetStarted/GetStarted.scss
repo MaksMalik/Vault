@@ -1,5 +1,10 @@
+$color_1: white;
+$color_2: white;
+$color_3: white;
+$font-family_1: "Open Sans";
+
 .getStarted {
-  background-image: url("https://i.ibb.co/dbPhQBC/backgroundv1.png");
+  background-image: url("https://i.ibb.co/f8fBStR/background-VPN.png");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,35 +15,40 @@
   align-items: center;
   scroll-snap-align: start;
   overflow: hidden;
+
+  .getStarted-wrap {
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.getStarted_button Button a {
-  text-decoration: none;
-
+.getStarted_button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #25292f;
+  z-index: 1;
+  border: none;
+  background-color: #eff0f3;
 }
-
 
 .getStarted_title {
   text-align: center;
   padding: 20px;
-  font-family: fussionregular;
-  color: rgba(255, 255, 255, 0.808);
+  font-family: $font-family_1;
+  color: $color_1;
   font-size: 20px;
   cursor: default;
-}
-
-.getStarted_button {
-  font-family: fussionregular !important;
-  font-size: 22px !important;
-  color: rgb(255, 255, 255) !important;
-  z-index: 1;
 }
 
 .getStarted_subTitle1 {
   text-align: center;
   padding: 10px;
-  font-family: fussionregular;
-  color: rgba(255, 255, 255, 0.486);
+  font-family: $font-family_1;
+  color: $color_3;
   font-size: 13px;
   cursor: default;
 }
@@ -46,13 +56,11 @@
 .getStarted_subTitle2 {
   text-align: center;
   padding: 10px;
-  font-family: fussionregular;
-  color: rgba(255, 255, 255, 0.486);
+  font-family: $font-family_1;
+  color: $color_3;
   font-size: 8px;
   cursor: default;
-  
 }
-
 
 .getStarted_image1 {
   height: 200px;

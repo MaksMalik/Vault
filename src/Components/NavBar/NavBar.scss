@@ -8,13 +8,14 @@
 }
 
 .navbar_title {
-  font-family: fussionregular;
-  font-weight: bold;
-  font-size: 40px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  top: 200px;
+  font-size: 30px;
   padding: 0 20px 0 40px;
   cursor: default;
   transition-duration: 300ms;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.822);
 }
 
 .navbar_navigation {
@@ -35,22 +36,19 @@
 .navbar_navigation_element {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: fussionregular;
+  font-family: 'Open Sans', sans-serif;
   color: rgba(255, 255, 255, 0.678);
   padding: 10px 10px 10px 10px;
-  font-size: 10px;
+  font-weight: 500;
+  font-size: 12px;
   transition-duration: 300ms;
   cursor: pointer;
-  border-top: 1px solid rgba(41, 130, 190, 0);
-  border-bottom: 1px solid rgba(41, 130, 190, 0);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0);
 }
 
 .navbar_navigation_element:hover {
   color: white;
   transform: scale(1.1);
-  border-top: 1px solid rgba(41, 131, 190, 0.678);
-  border-bottom: 1px solid rgba(41, 131, 190, 0.678);
   text-shadow: 0 0 10px rgba(255, 255, 255);
 }
 
@@ -65,10 +63,19 @@
 
 @media only screen and (max-width: 768px) {
 
+
+  .navbar_title {
+    padding: 50px 0 0 0 ;
+    font-size: 45px;
+  }
+
+  .navbar_navigation_element {
+    font-size: 15px;
+  }
+
   ul {
     top: 0;
     width: 70vw;
-    border-right: 3px solid rgba(0, 0, 0, 0.548);
     gap: 30px;
     position: absolute;
   }
@@ -149,9 +156,10 @@
   }
 
   .navbarM .menu-items {
-    background: #020940ef;
+    background: #25292F;
+    opacity: 0.98;
     height: 100vh;
-    max-width: 300px;
+    max-width: 250px;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -160,7 +168,7 @@
     margin-left: -40px;
     padding-left: 20px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 0px 0px 20px 2px rgb(0 0 0);
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0);
     transition: all 1s;
 
   }
@@ -170,9 +178,6 @@
   }
 
 
-  ul li a {
-    font-size: 30px;
-  }
 
 
   .navbar-container input[type="checkbox"]:checked~.menu-items {

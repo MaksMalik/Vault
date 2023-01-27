@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import NavBar from './Components/NavBar/NavBar';
 import GetStarted from './Components/GetStarted/GetStarted';
 import HowItWorks from './Components/HowItWorks/HowItWorks';

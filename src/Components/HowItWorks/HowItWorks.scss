@@ -1,3 +1,6 @@
+$color_1: #020940;
+$font-family_1: fussionregular;
+
 .HowItWorks {
   display: flex;
   height: 100vh;
@@ -16,8 +19,8 @@
   text-align: center;
   padding: 20px;
   font: normal normal bold 26px Open Sans;
-  font-family: fussionregular;
-  color: #020940;
+  font-family: $font-family_1;
+  color: $color_1;
   cursor: default;
 }
 
@@ -25,7 +28,7 @@
   text-align: center;
   padding: 20px;
   font: bold 20px Open Sans;
-  color: #020940;
+  color: $color_1;
   cursor: default;
 }
 
