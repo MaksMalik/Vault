@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   top: 200px;
-  font-size: 30px;
+  font-size: 40px;
   padding: 0 20px 0 40px;
   cursor: default;
   transition-duration: 300ms;
@@ -40,7 +40,7 @@
   color: rgba(255, 255, 255, 0.678);
   padding: 10px 10px 10px 10px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   transition-duration: 300ms;
   cursor: pointer;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0);
@@ -65,7 +65,7 @@
 
 
   .navbar_title {
-    padding: 50px 0 0 0 ;
+    padding: 50px 0 0 0;
     font-size: 45px;
   }
 
@@ -118,7 +118,6 @@
   }
 
   .navbar-container .hamburger-lines {
-    display: block;
     height: 23px;
     width: 35px;
     position: absolute;
@@ -137,7 +136,6 @@
     border-radius: 10px;
     background: white;
     box-shadow: 0 0 10px 1px #000000;
-    transition-duration: 300ms;
     transition: all 1s;
   }
 
@@ -156,7 +154,6 @@
   }
 
   .navbarM .menu-items {
-    background: #25292F;
     opacity: 0.98;
     height: 100dvh;
     max-width: 250px;
@@ -167,9 +164,11 @@
     align-items: center;
     margin-left: -40px;
     padding-left: 20px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 0px 0px 5px 2px rgb(0 0 0);
+    box-shadow: 0px 0px 5px rgb(0 0 0);
     transition: all 1s;
+    background-color: #25292f8f;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
   }
 
