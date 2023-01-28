@@ -25,6 +25,7 @@ export default function GetStarted() {
       let value = window.scrollY
       if (viewportWidth > 768) {
 
+
         cloud.forEach((item) => {
           item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`
         })
@@ -32,6 +33,7 @@ export default function GetStarted() {
         cloud2.forEach((item) => {
           item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 2000}`
         })
+        
         getStarted.forEach((item) => {
           item.style.translate = `0 ${value * 0.5}px`
         })
@@ -57,13 +59,13 @@ export default function GetStarted() {
           <div className='cloud'></div>
           <div className='cloud2'></div>
 
-          <div className='getStarted_title'>Secure yourself</div>
-          <div className='getStarted_subTitle1'>VPN that you can trust</div>
+          <div className='getStarted_title'>Store and secure you data</div>
+          <div className='getStarted_subTitle1'>Secure Document & Data Storage</div>
           <a href='#how'>
             <button href="#how" className='getStarted_button'>Get Started</button>
           </a>
 
-          <div className='getStarted_subTitle2'>30 days free premium trial</div>
+          <div className='getStarted_subTitle2'>2GB FOR FREE</div>
         </div>
       </div>
 

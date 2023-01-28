@@ -1,7 +1,7 @@
 .bottom {
-  background-image: url("https://i.ibb.co/dG1Mrmk/bottom.png");
+  background-image: url("https://i.ibb.co/W5C2kr6/bottom2.png");
   background-color: #25292F;
-  height: 10vh;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -14,12 +14,20 @@
   text-transform: uppercase;
 }
 
+.bottom::after {
+  position: relative;
+  content:"";
+  height:100%;
+  width:100vw;
+  top: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 60%);
+}
+
 @media only screen and (max-width: 768px) {
   .bottom{
-    background-image: none;
-    background-color: #25292F;
-
-    height: 10vh;
-    min-height: min-content;
+    height: 100vh;
   }
 }

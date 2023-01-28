@@ -2,6 +2,12 @@ $color_1: rgba(255, 255, 255, 0.678);
 $color_2: rgba(255, 255, 255, 0.678);
 $color_3: rgba(255, 255, 255, 0.678);
 
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
 $font-family_1: "Open Sans";
 
 .getStarted {
@@ -54,7 +60,7 @@ $font-family_1: "Open Sans";
 
 .getStarted_button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   color: white;
   z-index: 1;
   text-transform: uppercase;
@@ -64,7 +70,11 @@ $font-family_1: "Open Sans";
   border: none;
   border-top: 1px solid #eff0f3;
   border-bottom: 1px solid #eff0f3;
-  padding: 10px 40px;
+  padding: 10px 85px;
+
+  @include tablet {
+    font-size: 18px;
+  }
 
   &:hover {
     background-color: #25292f;
@@ -79,6 +89,10 @@ $font-family_1: "Open Sans";
   color: rgba(255, 255, 255, 0.918);
   font-size: 25px;
   cursor: default;
+
+  @include tablet {
+    font-size: 20px;
+  }
 }
 
 .getStarted_subTitle1 {
@@ -86,8 +100,11 @@ $font-family_1: "Open Sans";
   padding: 15px;
   font-family: $font-family_1;
   color: $color_3;
-  font-size: 17px;
+  font-size: 20px;
   cursor: default;
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .getStarted_subTitle2 {
@@ -95,8 +112,9 @@ $font-family_1: "Open Sans";
   padding: 10px;
   font-family: $font-family_1;
   color: $color_3;
-  font-size: 10px;
+  font-size: 14px;
   cursor: default;
+
 }
 
 .getStarted_image1 {

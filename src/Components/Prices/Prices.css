@@ -15,6 +15,7 @@
 
 @media only screen and (max-width: 768px) {
   .prices {
-    height: 50vh;
-    min-height: min-content;  }
+    height: min-content;;
+    min-height: 100vh;
+  }
 }
