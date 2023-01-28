@@ -1,7 +1,7 @@
 .bottom {
-  background-color: #eff0f3;
   background-image: url("https://i.ibb.co/dG1Mrmk/bottom.png");
-  height: 100vh;
+  background-color: #25292F;
+  height: 10vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -15,5 +15,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .bottom{
+    background-image: none;
+    background-color: #25292F;
 
+    height: 10vh;
+    min-height: min-content;
+  }
 }
