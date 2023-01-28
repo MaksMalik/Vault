@@ -5,7 +5,7 @@ $color_3: rgba(255, 255, 255, 0.678);
 $font-family_1: "Open Sans";
 
 .getStarted {
-  background-image: url("https://i.ibb.co/f8fBStR/background-VPN.png");
+  background-image: url("https://i.ibb.co/Fwgb80y/background-VPN.png");
   height: 100dvh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,6 +25,27 @@ $font-family_1: "Open Sans";
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
+    .cloud {
+      height: 200px;
+      width: 400px;
+      position: absolute;
+      left: 400px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
+    }
+
+    .cloud2 {
+      height: 200px;
+      width: 400px;
+      position: absolute;
+      right: 400px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
+    }
   }
 }
 
