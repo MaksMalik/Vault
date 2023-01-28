@@ -14,13 +14,11 @@ $font-family_1: "Open Sans";
   position: relative;
   scroll-snap-align: start;
   background-color: #eff0f3;
-  overflow: hidden;
 }
 
 .HowItWorks_title-top {
   text-align: center;
   padding: 20px;
-  font: normal normal bold 26px Open Sans;
   font-family: $font-family_1;
   color: $color_1;
   cursor: default;
@@ -63,11 +61,20 @@ $font-family_1: "Open Sans";
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .HowItWorks {
+    min-height: 100vh;
+  }
+}
+
+
 @media only screen and (max-width: 772px) {
   .HowItWorks_image1 {
     width: 60vw;
     height: 100%;
   }
+
+
 
   .HowItWorks_image2 {
     height: 300px;

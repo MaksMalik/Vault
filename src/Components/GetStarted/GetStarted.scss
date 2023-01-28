@@ -19,6 +19,8 @@ $font-family_1: "Open Sans";
   text-transform: uppercase;
 
   .getStarted-wrap {
+    scroll-snap-align: start;
+
     position: relative;
     top: -80px;
     display: flex;
@@ -29,21 +31,21 @@ $font-family_1: "Open Sans";
 
     .cloud {
       height: 200px;
-      width: 400px;
       position: absolute;
       left: 400px;
       background-size: contain;
       background-repeat: no-repeat;
+      aspect-ratio: auto 4506 / 2602;
       background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
     }
 
     .cloud2 {
       height: 200px;
-      width: 400px;
       position: absolute;
       right: 400px;
       background-size: contain;
       background-repeat: no-repeat;
+      aspect-ratio: auto 4506 / 2602;
       background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
     }
   }

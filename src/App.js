@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar/NavBar';
 import GetStarted from './Components/GetStarted/GetStarted';
 import HowItWorks from './Components/HowItWorks/HowItWorks';
 import Prices from './Components/Prices/Prices';
+import Bottom from './Components/Bottom/Bottom';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <NavBar />
       <GetStarted />
       <HowItWorks />
-      <Prices/>
+      <Prices />
+      <Bottom/>
     </>
   );
 }
