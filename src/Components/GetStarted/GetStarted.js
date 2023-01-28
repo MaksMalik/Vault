@@ -11,11 +11,11 @@ export default function GetStarted() {
 
 
 
-  
-  
-  
+
+
+
   window.addEventListener('scroll', function () {
-    
+
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     let cloud = document.querySelectorAll(".cloud")
     let getStarted = document.querySelectorAll(".getStarted")
@@ -24,21 +24,21 @@ export default function GetStarted() {
 
     let value = window.scrollY
     if (viewportWidth > 768) {
-      
-    cloud.forEach((item) => {
-      item.style.translate = `${-value * 0.5}px 0`
-      item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 1000}`
-    })
 
-    cloud2.forEach((item) => {
-      item.style.translate = `${value * 0.5}px 0`
-      item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 1000}`
-    })
+      cloud.forEach((item) => {
+        item.style.translate = `${-value * 0.5}px 0`
+        item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 1000}`
+      })
+
+      cloud2.forEach((item) => {
+        item.style.translate = `${value * 0.5}px 0`
+        item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 1000}`
+      })
     }
-
     getStarted.forEach((item) => {
       item.style.translate = `0 ${value * 0.5}px`
     })
+
   })
 
 
