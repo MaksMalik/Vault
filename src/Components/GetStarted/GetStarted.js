@@ -10,43 +10,52 @@ export default function GetStarted() {
   });
 
 
-
+  function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+      (navigator.maxTouchPoints > 0) ||
+      (navigator.msMaxTouchPoints > 0));
+  }
 
 
   useEffect(() => {
-    const sub = window.addEventListener('scroll', function () {
 
-      let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-      let cloud = document.querySelectorAll(".cloud")
-      let getStarted = document.querySelectorAll(".getStarted")
-
-      let bottom = document.querySelectorAll(".wrap-top")
+    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    let cloud = document.querySelectorAll(".cloud")
+    let getStarted = document.querySelectorAll(".getStarted")
+    let bottom = document.querySelectorAll(".wrap-top")
 
 
-      let cloud2 = document.querySelectorAll(".cloud2")
+    let cloud2 = document.querySelectorAll(".cloud2")
+    if (!isTouchDevice()) {
+      const sub = window.addEventListener('scroll', function () {
 
-      let value = window.scrollY
-      if (viewportWidth > 768) {
 
-        bottom.forEach((item) => {
-          item.style.translate = `${-value * 0.25}px 0`
-        })
+        let value = window.scrollY
+        if (viewportWidth > 768) {
 
-        cloud.forEach((item) => {
-          item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`
-        })
+          bottom.forEach((item) => {
+            item.style.right = `-500px`
 
-        cloud2.forEach((item) => {
-          item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 2000}`
-        })
-        
-        getStarted.forEach((item) => {
-          item.style.translate = `0 ${value * 0.5}px`
-        })
-      }
+            item.style.translate = `${-value * 0.25}px 0`
+          })
 
-    }) 
-    return sub
+          cloud.forEach((item) => {
+            item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`
+          })
+
+          cloud2.forEach((item) => {
+            item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 2000}`
+          })
+
+          getStarted.forEach((item) => {
+            item.style.translate = `0 ${value * 0.5}px`
+          })
+        }
+
+      })
+      return sub
+    }
+
   })
 
 
@@ -61,7 +70,7 @@ export default function GetStarted() {
   return (
     <>
       <div className='getStarted section' id='start'>
-      <div style={{position: "absolute", top: "0"}} id="top"></div>
+        <div style={{ position: "absolute", top: "0" }} id="top"></div>
 
         <div className='getStarted-wrap'>
           <div className='cloud'></div>
