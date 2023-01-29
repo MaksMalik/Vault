@@ -9,6 +9,12 @@ $background-color_3: #EFF0F3;
   font-style: normal;
 }
 
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 /* Chrome, Edge, and Safari */
@@ -54,8 +60,17 @@ html {
   scrollbar-width: 4px;
   scrollbar-color: #25292F;
 
+  @include tablet {
+    width: 0;
+  }
+
+
   &::-webkit-scrollbar {
     width: 4px;
+
+    @include tablet {
+      width: 0;
+    }
   }
 
   &::-webkit-scrollbar-track {
@@ -66,5 +81,9 @@ html {
     background-color: $background-color_2;
     border-radius: 0px;
     width: 4px;
+
+    @include tablet {
+      width: 0;
+    }
   }
 }
