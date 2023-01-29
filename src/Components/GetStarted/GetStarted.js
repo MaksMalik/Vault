@@ -37,7 +37,7 @@ export default function GetStarted() {
           if (viewportWidth > 768) {
 
             bottom.forEach((item) => {
-              item.style.right = `-500px`
+              item.style.right = `-450px`
 
               item.style.translate = `${-value * 0.25}px 0`
             })

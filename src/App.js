@@ -9,17 +9,16 @@ import NavBarPC from './Components/NavBar/NavBarPC';
 function App() {
   return (
     <>
-          <NavBar />
+      <NavBar />
       <div className='WrapperApp'>
         <header className='header'>
-          <div className='test'></div>
-          <NavBarPC/>
+          <NavBarPC />
 
           <GetStarted />
           <HowItWorks />
           <Prices />
           <Bottom />
-          
+
         </header>
       </div>
     </>
