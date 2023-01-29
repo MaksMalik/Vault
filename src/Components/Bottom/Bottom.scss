@@ -1,0 +1,117 @@
+.bottom {
+  background-image: url("../../../public/images/bottom2.png");
+  background-color: #25292F;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  overflow: hidden;
+
+  &::before {
+  position: relative;
+  content:"";
+  height:100%;
+  width:100vw;
+  top: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 50vh;
+
+    .wrap-top {
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      .googlePlay{
+        background-image: url("../../../public/images/googlePlay.png");
+        height: 40px;
+        transition-duration: 500ms;
+        aspect-ratio: 209 / 70;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer; 
+        border-radius: 6px;
+        -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        
+        &:hover {
+          -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+          filter: none;          
+          background-color: white;
+        }
+      }
+
+      .appleStore {
+        background-image: url("../../../public/images/appleStore.png");
+        height: 40px;
+        transition-duration: 500ms;
+        border-radius: 6px;
+        aspect-ratio: 209 / 70;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        -webkit-filter:invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        &:hover {
+          -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+          filter: none;          
+          background-color: white;
+        }
+      }
+    }
+    
+    .wrap-bottom{
+      padding: 0 0 40px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      
+      .arrowUp {
+        color: #eff0f3;
+      }
+      .wrap-bottom-rights {
+        color: #eff0f3b6;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .bottom{
+    height: 100vh;
+  }
+
+  .wrap-top {
+    flex-direction: column;
+  }
+
+  .wrap{
+    gap: 20px;
+  }
+
+  .bottom .wrap .wrap-bottom {
+    padding: 0 0 20px 0;
+    gap: 20px;
+  }
+}

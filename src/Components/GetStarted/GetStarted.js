@@ -55,6 +55,8 @@ export default function GetStarted() {
   return (
     <>
       <div className='getStarted section' id='start'>
+      <div style={{position: "absolute", top: "0"}} id="top"></div>
+
         <div className='getStarted-wrap'>
           <div className='cloud'></div>
           <div className='cloud2'></div>

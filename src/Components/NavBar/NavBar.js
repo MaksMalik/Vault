@@ -39,7 +39,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className='navbar'>
+      <div className='navbar' id='navbar'>
         <div className='navbar_title'>Vault</div>
         <div className='navbar_navigation PC'>
           <a href='#how'><div className='navbar_navigation_element'>How?</div></a>
