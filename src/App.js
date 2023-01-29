@@ -4,14 +4,16 @@ import GetStarted from './Components/GetStarted/GetStarted';
 import HowItWorks from './Components/HowItWorks/HowItWorks';
 import Prices from './Components/Prices/Prices';
 import Bottom from './Components/Bottom/Bottom';
+import NavBarPC from './Components/NavBar/NavBarPC';
 
 function App() {
   return (
     <>
-      <div className='WrapperApp'>
           <NavBar />
-        <header>
+      <div className='WrapperApp'>
+        <header className='header'>
           <div className='test'></div>
+          <NavBarPC/>
 
           <GetStarted />
           <HowItWorks />

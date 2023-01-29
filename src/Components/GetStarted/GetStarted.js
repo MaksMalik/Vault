@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React, { useEffect } from 'react'
 import "./GetStarted.scss"
 
@@ -10,26 +9,31 @@ export default function GetStarted() {
     }
   });
 
-// eslint-disable-next-line
+
   function isTouchDevice() {
     return (('ontouchstart' in window) ||
       (navigator.maxTouchPoints > 0) ||
       (navigator.msMaxTouchPoints > 0));
   }
 
-// eslint-disable-next-line
-/*   useEffect(() => {
 
+  useEffect(() => {
+
+    
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     let cloud = document.querySelectorAll(".cloud")
     let getStarted = document.querySelectorAll(".getStarted")
     let bottom = document.querySelectorAll(".wrap-top")
+    let header = document.getElementsByClassName('WrapperApp');
 
-
+    
+    
     let cloud2 = document.querySelectorAll(".cloud2")
     if (!isTouchDevice()) {
-      const sub = window.addEventListener('scroll', function () {
+      console.log(header)
 
+      const sub = window.addEventListener('scroll', function () {
+        
 
         let value = window.scrollY
         if (viewportWidth > 768) {
@@ -57,7 +61,7 @@ export default function GetStarted() {
       return sub
     }
 
-  }) */
+  })
 
 
 

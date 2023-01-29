@@ -39,16 +39,6 @@ export default function NavBar() {
 
   return (
     <>
-      <div className='navbar' id='navbar'>
-        <div className='navbar_title'>Vault</div>
-        <div className='navbar_navigation PC'>
-          <a href='#how'><div className='navbar_navigation_element'>How?</div></a>
-          <a href='#prices'><div className='navbar_navigation_element'>Prices</div></a>
-          <a href='#download'><div className='navbar_navigation_element'>Download</div></a>
-          <a href='#contact'><div className='navbar_navigation_element'>Contact</div></a>
-        </div>
-      </div>
-
       <nav className="navbarM" id='navbarMm'>
         <div className="navbar-container container navbar_navigation">
           <input type="checkbox" name="" id="checkBoxNavBar"></input>
