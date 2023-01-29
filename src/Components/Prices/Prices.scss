@@ -1,0 +1,36 @@
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+.prices {
+  height: 100vh;
+  background-color: #eff0f300;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.prices_title-top {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-size: 25px;
+  color: #eff0f3;
+  cursor: default;
+}
+
+.prices_title {
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  color: #eff0f3;
+}

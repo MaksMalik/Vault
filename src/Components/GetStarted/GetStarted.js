@@ -20,11 +20,17 @@ export default function GetStarted() {
       let cloud = document.querySelectorAll(".cloud")
       let getStarted = document.querySelectorAll(".getStarted")
 
+      let bottom = document.querySelectorAll(".wrap-top")
+
+
       let cloud2 = document.querySelectorAll(".cloud2")
 
       let value = window.scrollY
       if (viewportWidth > 768) {
 
+        bottom.forEach((item) => {
+          item.style.translate = `${-value * 0.25}px 0`
+        })
 
         cloud.forEach((item) => {
           item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`

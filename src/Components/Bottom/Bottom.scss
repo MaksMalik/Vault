@@ -1,3 +1,9 @@
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
 .bottom {
   background-image: url("../../../public/images/bottom2.png");
   background-color: #25292F;
@@ -11,9 +17,10 @@
   align-items: center;
   scroll-snap-align: start;
   overflow: hidden;
+  position: relative;
 
   &::before {
-  position: relative;
+  position: absolute;
   content:"";
   height:100%;
   width:100vw;
@@ -26,18 +33,77 @@
 
   .wrap {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    height: 50vh;
+    height: 100vh;
 
     .wrap-top {
-      gap: 20px;
+      gap: 10px;
       display: flex;
       align-items: center;
+      flex-direction: column;
+      text-align: center;
       justify-content: center;
+      color: #25292F;
+      z-index: 1;
+      height: 100vh;
+      position: relative;
+      right: -500px;
 
+      @include tablet {
+        right: 0;
+      }
+
+      .bottom_title-top{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0px;
+        font-size: 30px;
+        color: #25292F;
+        cursor: default;
+      }
+
+      .bottom_title{
+        text-align: center;
+        padding: 30px;
+        font-size: 15px;
+        color: #25292F;
+      }
+    }
+    
+
+    .wrap-bottom{
+      padding: 0 0 40px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      z-index: 3;
+
+      @include tablet {
+        padding: 0 0 20px 0px;
+        gap: 20px;
+      }
+
+      .wrap-bottom-buttons{
+        display: flex;
+        gap: 20px;
+
+        @include tablet {
+          flex-direction: column;
+        }
+      }
+
+      .arrowUp {
+        color: #eff0f3;
+      }
+      .wrap-bottom-rights {
+        color: #eff0f3b6;
+        font-size: 12px;
+        font-weight: 500;
+      }
 
       .googlePlay{
         background-image: url("../../../public/images/googlePlay.png");
@@ -76,42 +142,5 @@
         }
       }
     }
-    
-    .wrap-bottom{
-      padding: 0 0 40px 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      
-      .arrowUp {
-        color: #eff0f3;
-      }
-      .wrap-bottom-rights {
-        color: #eff0f3b6;
-        font-size: 12px;
-        font-weight: 500;
-      }
-    }
-  }
-}
-
-
-@media only screen and (max-width: 768px) {
-  .bottom{
-    height: 100vh;
-  }
-
-  .wrap-top {
-    flex-direction: column;
-  }
-
-  .wrap{
-    gap: 20px;
-  }
-
-  .bottom .wrap .wrap-bottom {
-    padding: 0 0 20px 0;
-    gap: 20px;
   }
 }
