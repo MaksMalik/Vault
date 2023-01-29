@@ -1,2 +1,2 @@
 # VPN Connect (in progress)
-LIVE: https://vpn-connect.netlify.app/
+LIVE: https://vault-storage.netlify.app/
