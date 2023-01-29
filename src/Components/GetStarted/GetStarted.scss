@@ -11,7 +11,6 @@ $color_3: rgba(255, 255, 255, 0.678);
 $font-family_1: "Open Sans";
 
 .getStarted {
-  background-image: url("https://i.ibb.co/sQ96MRV/background-VPN.png");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,9 +19,12 @@ $font-family_1: "Open Sans";
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   scroll-snap-align: start;
   overflow: hidden;
   text-transform: uppercase;
+  background-image: url("../../images/getStartedBackground2.png");
+  filter: drop-shadow(0 20px 10px #eff0f3);
 
   .getStarted-wrap {
     scroll-snap-align: start;
@@ -38,20 +40,23 @@ $font-family_1: "Open Sans";
       height: 200px;
       position: absolute;
       left: 400px;
+      top: -50px;
       background-size: contain;
+      opacity: 0.7;
       background-repeat: no-repeat;
-      aspect-ratio: auto 4506 / 2602;
-      background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
+      aspect-ratio: auto 895 / 246;
+      background-image: url("../../images/cloud2.png");
     }
 
     .cloud2 {
       height: 200px;
       position: absolute;
+      top: 50px;
       right: 400px;
       background-size: contain;
       background-repeat: no-repeat;
-      aspect-ratio: auto 4506 / 2602;
-      background-image: url("https://i.ibb.co/BV4B9gd/vecteezy-white-cloud-clipart-design-illustration-9302650-805.png");
+      aspect-ratio: auto 895 / 246;
+      background-image: url("../../images/cloud1.png");
     }
   }
 }
@@ -77,8 +82,10 @@ $font-family_1: "Open Sans";
   }
 
   &:hover {
-    background-color: #25292f;
     color: #eff0f3;
+    background: linear-gradient(90deg, #eff0f300 0%, #25292F 50%, #eff0f300 100%);
+    transform: scale(1.1);
+    padding: 10px 69px;
   }
 }
 
