@@ -19,48 +19,41 @@ export default function GetStarted() {
 
   useEffect(() => {
 
-    
+
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     let cloud = document.querySelectorAll(".cloud")
-    let getStarted = document.querySelectorAll(".getStarted")
     let bottom = document.querySelectorAll(".wrap-top")
-    let header = document.getElementsByClassName('WrapperApp');
+    let header = document.querySelectorAll('.WrapperApp');
 
-    
-    
+
     let cloud2 = document.querySelectorAll(".cloud2")
     if (!isTouchDevice()) {
-      console.log(header)
 
-      const sub = window.addEventListener('scroll', function () {
-        
+      const sub = header.forEach(function (element) {
+        element.addEventListener("scroll", function () {
 
-        let value = window.scrollY
-        if (viewportWidth > 768) {
+          let value = element.scrollTop
 
-          bottom.forEach((item) => {
-            item.style.right = `-500px`
+          if (viewportWidth > 768) {
 
-            item.style.translate = `${-value * 0.25}px 0`
-          })
+            bottom.forEach((item) => {
+              item.style.right = `-500px`
 
-          cloud.forEach((item) => {
-            item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`
-          })
+              item.style.translate = `${-value * 0.25}px 0`
+            })
 
-          cloud2.forEach((item) => {
-            item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 2000}`
-          })
+            cloud.forEach((item) => {
+              item.style.cssText = `translate: ${-value}px 0 ; scale: ${1 + value / 2000}`
+            })
 
-          getStarted.forEach((item) => {
-            item.style.translate = `0 ${value * 0.5}px`
-          })
-        }
-
+            cloud2.forEach((item) => {
+              item.style.cssText = `translate: ${value}px 0; scale: ${1 + value / 2000}`
+            })
+          }
+        })
       })
       return sub
     }
-
   })
 
 
