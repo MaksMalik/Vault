@@ -9,7 +9,13 @@ export default function Bottom() {
           
             <div className='wrap-top'>
               <div className='bottom_title-top'>Proin nec ante eros. </div>
-              <div className='bottom_title'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Nam accumsan sem ut accumsan commodo. <br /> Et harum quidem rerum facilis est et expedita distinctio. </div>
+              <div className='bottom_title'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                Nam accumsan sem ut accumsan commodo. <br /> 
+                Et harum quidem rerum facilis est et expedita distinctio. <br /> 
+                In hac habitasse platea dictumst. Nullam vehicula et leo ut commodo. <br /> 
+                Nam faucibus maximus ipsum, ac pellentesque urna hendrerit non. 
+              </div>
             </div>
 
             <div className='wrap-bottom'>

@@ -60,16 +60,24 @@
         text-align: center;
         text-transform: uppercase;
         padding: 0px;
-        font-size: 30px;
+        font-size: 35px;
         color: #25292F;
         cursor: default;
+
+        @include tablet {
+          font-size: 25px;
+        }
       }
 
       .bottom_title{
         text-align: center;
         padding: 30px;
-        font-size: 15px;
+        font-size: 18px;
         color: #25292F;
+
+        @include tablet {
+          font-size: 15px;
+        }
       }
     }
     
