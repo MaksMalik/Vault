@@ -8,11 +8,18 @@ import Bottom from './Components/Bottom/Bottom';
 function App() {
   return (
     <>
-      <NavBar />
-      <GetStarted />
-      <HowItWorks />
-      <Prices />
-      <Bottom/>
+      <div className='WrapperApp'>
+          <NavBar />
+        <header>
+          <div className='test'></div>
+
+          <GetStarted />
+          <HowItWorks />
+          <Prices />
+          <Bottom />
+          
+        </header>
+      </div>
     </>
   );
 }

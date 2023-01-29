@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useEffect } from 'react'
 import "./GetStarted.scss"
 
@@ -9,15 +10,15 @@ export default function GetStarted() {
     }
   });
 
-
+// eslint-disable-next-line
   function isTouchDevice() {
     return (('ontouchstart' in window) ||
       (navigator.maxTouchPoints > 0) ||
       (navigator.msMaxTouchPoints > 0));
   }
 
-
-  useEffect(() => {
+// eslint-disable-next-line
+/*   useEffect(() => {
 
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     let cloud = document.querySelectorAll(".cloud")
@@ -56,7 +57,7 @@ export default function GetStarted() {
       return sub
     }
 
-  })
+  }) */
 
 
 

@@ -8,6 +8,9 @@
   background-image: url("../../../public/images/bottom2.png");
   background-color: #25292F;
   height: 100vh;
+  width: 100vw;
+
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -20,15 +23,15 @@
   position: relative;
 
   &::before {
-  position: absolute;
-  content:"";
-  height:100%;
-  width:100vw;
-  top: 0;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 70%);
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 70%);
   }
 
   .wrap {
@@ -50,12 +53,15 @@
       z-index: 1;
       height: 100vh;
       position: relative;
+      padding: 0 250px 0 0;
 
       @include tablet {
+        padding: 0 0px 0 0;
+
         right: 0;
       }
 
-      .bottom_title-top{
+      .bottom_title-top {
         text-align: center;
         text-transform: uppercase;
         padding: 0px;
@@ -69,7 +75,7 @@
         }
       }
 
-      .bottom_title{
+      .bottom_title {
         text-align: center;
         padding: 30px;
         font-size: 18px;
@@ -80,9 +86,9 @@
         }
       }
     }
-    
 
-    .wrap-bottom{
+
+    .wrap-bottom {
       padding: 0 0 40px 0px;
       display: flex;
       flex-direction: column;
@@ -95,7 +101,7 @@
         gap: 20px;
       }
 
-      .wrap-bottom-buttons{
+      .wrap-bottom-buttons {
         display: flex;
         gap: 20px;
 
@@ -107,27 +113,28 @@
       .arrowUp {
         color: #eff0f3;
       }
+
       .wrap-bottom-rights {
         color: #eff0f3b6;
         font-size: 12px;
         font-weight: 500;
       }
 
-      .googlePlay{
+      .googlePlay {
         background-image: url("../../images/googlePlay.png");
         height: 40px;
         transition-duration: 500ms;
         aspect-ratio: 209 / 70;
         background-size: contain;
         background-repeat: no-repeat;
-        cursor: pointer; 
+        cursor: pointer;
         border-radius: 6px;
-        -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        -webkit-filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
         filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
-        
+
         &:hover {
-          -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
-          filter: none;          
+          -webkit-filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+          filter: none;
           background-color: white;
         }
       }
@@ -141,11 +148,12 @@
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
-        -webkit-filter:invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+        -webkit-filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
         filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+
         &:hover {
-          -webkit-filter:  invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
-          filter: none;          
+          -webkit-filter: invert(94%) sepia(94%) saturate(3%) hue-rotate(165deg) brightness(105%) contrast(100%);
+          filter: none;
           background-color: white;
         }
       }

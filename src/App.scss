@@ -1,0 +1,35 @@
+.WrapperApp {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  scroll-behavior: smooth;
+
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100vw;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    z-index: -1;
+
+
+    .test {
+      height: 200px;
+      transform: translateZ(-10px) scale(2);
+      position: absolute;
+      top: 200px;
+      right: 400px;
+      z-index: 10;
+      background-size: contain;
+      background-repeat: no-repeat;
+      aspect-ratio: auto 895/246;
+      background-image: url("https://vault-storage.netlify.app/static/media/cloud1.82c7ee18c00cf7e30d9a.png");
+    }
+  }
+}
