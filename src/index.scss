@@ -61,7 +61,7 @@ html {
   scrollbar-color: #25292F;
 
   @include tablet {
-    width: 0;
+    scrollbar-width: 0;
   }
 
 
