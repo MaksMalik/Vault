@@ -26,8 +26,10 @@ $font-family_1: "Open Sans";
 
 
   @include tablet {
+    transform: none;
+    transform: translateY(-100px);
     height: min-content;
-    margin: 400px 0 400px 0;
+    margin: 0;
   }
 
   .priceWrap {

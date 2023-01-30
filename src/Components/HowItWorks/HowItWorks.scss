@@ -23,7 +23,7 @@ $font-family_1: "Open Sans";
   scroll-snap-align: start;
 
   @include tablet {
-    margin: 300px;
+    margin: 200px 0 300px 0;
     transform: translateZ(-5px) scale(1.5);
 
 
