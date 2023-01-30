@@ -39,7 +39,7 @@ export default function GetStarted() {
             bottom.forEach((item) => {
               item.style.right = `-450px`
 
-              item.style.translate = `${-value * 0.2}px 0`
+              item.style.translate = `${-value * 0.15}px 0`
             })
 
             cloud.forEach((item) => {
