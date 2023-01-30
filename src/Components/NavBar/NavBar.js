@@ -58,11 +58,12 @@ export default function NavBar() {
               <a className="link navbar_navigation_element" href='#prices'>Prices</a>
             </li>
             <li>
-              <a className="link navbar_navigation_element" href='#download'>Download</a>
-            </li>
-            <li>
               <a className="link navbar_navigation_element" href='#contact'>Contact</a>
             </li>
+            <li>
+              <a className="link navbar_navigation_element" href='#download'>Download</a>
+            </li>
+          
           </ul>
         </div>
       </nav>

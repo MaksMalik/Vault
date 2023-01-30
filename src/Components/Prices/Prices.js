@@ -7,11 +7,6 @@ export default function Prices() {
       <div className='Price section' id="prices">
         <div className='priceWrap'>
           <div className='Price_title-top'> Nunc elementum metus in facilisis</div>
-          <div className='Price_title'>
-            Nullam varius pretium dolor eget ultrices. <br />
-            Cras convallis feugiat accumsan. <br />
-            Donec placerat odio sed tincidunt vehicula. <br />
-
 
             <div className='Price-prices'>
 
@@ -99,7 +94,6 @@ export default function Prices() {
                   <button className='button-begin'>
                     Begin
                   </button>
-                </div>
               </div>
             </div>
           </div>
