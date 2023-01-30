@@ -5,6 +5,7 @@ import HowItWorks from './Components/HowItWorks/HowItWorks';
 import Prices from './Components/Prices/Prices';
 import Bottom from './Components/Bottom/Bottom';
 import NavBarPC from './Components/NavBar/NavBarPC';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <GetStarted />
           <HowItWorks />
           <Prices />
+          <Contact/>
           <Bottom />
         </header>
       </div>

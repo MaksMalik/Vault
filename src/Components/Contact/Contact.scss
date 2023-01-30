@@ -1,0 +1,124 @@
+$color_1: #25292f;
+$font-family_1: "Open Sans";
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+.Contact {
+  display: flex;
+  z-index: -1;
+  width: 100vw;
+  transform: translateZ(-20px) scale(3);
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  scroll-snap-align: start;
+
+  @include tablet {
+    transform: translateZ(-5px) scale(1.5);
+
+
+    .contactWrap {
+      padding: 0 0 0px 0;
+    }
+  }
+
+  .Contact_title-top {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: $font-family_1;
+    color: $color_1;
+    cursor: default;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px 0 40px 0;
+
+  }
+
+  .Contact_title {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: $font-family_1;
+    color: $color_1;
+    cursor: default;
+  }
+
+  .ContactRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+    .Contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  input::placeholder {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+    text-transform: uppercase !important;
+  }
+
+  input {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+  }
+
+  .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+    color: #48605A !important;
+    font-family: Open Sans !important;
+  }
+
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+  .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+    color: #48605A;
+  }
+
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: #48605A !important;
+    font-family: Open Sans !important;
+
+  }
+
+  .button-send {
+    font-family: Open Sans !important;
+    font-weight: 500 !important;
+
+    min-height: 60px;
+    /*   background-color: var(--blue) !important;
+ */
+    border-radius: 0 !important;
+    letter-spacing: 4px !important;
+    border-color: #48605A !important;
+    font-size: 15px;
+    font-weight: 600 !important;
+    color: #48605A !important;
+  }
+
+  label {
+
+    color: #48605A !important;
+  }
+
+  .MuiFormControlLabel-label {
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+  }
+}

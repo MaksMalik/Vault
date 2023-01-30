@@ -35,9 +35,7 @@ export default function Prices() {
                     </div>
 
                   </div>
-                  <button className='button-begin'>
-                    Begin
-                  </button>
+ 
                 </div>
                 <div className='offer-offer1'>
                   <div className='nameOffer'>Premium</div>
@@ -63,9 +61,7 @@ export default function Prices() {
                     </div>
 
                   </div>
-                  <button className='button-begin'>
-                    Begin
-                  </button>
+
                 </div>
                 <div className='offer-offer1' >
                   <div className='nameOffer'>Unlimited</div>
@@ -90,12 +86,11 @@ export default function Prices() {
                       <i className='fa-solid fa-check'></i> Nullam elementum
                     </div>
 
-                  </div>
-                  <button className='button-begin'>
-                    Begin
-                  </button>
+                </div>
+
               </div>
             </div>
+            <div className='price-underTitle'>*Aenean ultricies leo eget pulvinar volutpat. Etiam in venenatis eros, a rutrum quam. </div>
           </div>
         </div>
       </div>
