@@ -26,8 +26,8 @@ export default function HowItWorks() {
               </div>
               <div className="mainPageWhyUs-statistics-perDay ">
                 <i className="fa-solid fa-file-shield icons"></i>
-                <p> Maecenas non euismod ipsum</p>
-                <p className='icon-subtitle'>Quisque pretium fermentum lacus sed maximus. Vestibulum vestibulum lorem eu vehicula sodales.</p>
+                <p> Maecenas non euismod ipsu</p>
+                <p className='icon-subtitle'>Quisque pretium fermentum lacus sed maximus. Vestibulum vestibulum lorem eu .</p>
               </div>
              {/*  <div className="mainPageWhyUs-statistics-perDay ">
                 <i className="fa-solid fa-cubes icons"></i>
@@ -35,8 +35,7 @@ export default function HowItWorks() {
                 <p className='icon-subtitle'>Donec malesuada pretium ligula id dictum. Pellentesque commodo suscipit magna, et feugiat massa imperdiet ac. </p>
               </div> */}
             </div>
-            <div className="mainPageWhyUs-statistics">
-            </div>
+
           </div>
         </div>
       </div>

@@ -46,11 +46,12 @@ $font-family_1: "Open Sans";
   .HowItWorks_title {
     text-align: center;
     padding: 20px;
-    text-transform: uppercase;
     font-size: 18px;
     font-family: $font-family_1;
     color: $color_1;
     cursor: default;
+    line-height: 20px;
+
   }
 
 
@@ -71,18 +72,18 @@ $font-family_1: "Open Sans";
     .icons {
       color: #48605A;
       font-size: 60px;
-      padding: 0 0 40px 0;
+      padding: 0 0 30px 0;
       transition-duration: 500ms;
       margin: 60px 0 0 0;
     }
 
     .icon-subtitle {
-      text-align: justify;
+      margin-top: 10px;
+      text-align: center;
+      text-transform: none;
       text-align-last: center;
       color: #48605acb;
-
       font-size: 12px;
-      line-height: 12px;
     }
 
 
@@ -92,11 +93,13 @@ $font-family_1: "Open Sans";
     }
 
     .mainPageWhyUs-statistics-time {
+      max-height: 200px;
       padding: 0 20px 0 20px;
       max-width: 260px;
     }
 
     .mainPageWhyUs-statistics-perDay {
+      max-height: 200px;
       padding: 0 20px 0 20px;
       max-width: 260px;
     }
