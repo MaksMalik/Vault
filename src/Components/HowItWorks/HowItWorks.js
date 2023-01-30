@@ -4,9 +4,9 @@ import "./HowItWorks.scss"
 export default function HowItWorks() {
   return (
     <>
-      <div className='HowItWorks section' id="how">
+      <div className='HowItWorks section' >
         <div className='howWrap'>
-          <div className='HowItWorks_title-top'> Quisque sit amet laoreet magna</div>
+          <div className='HowItWorks_title-top' id="how"> Quisque sit amet laoreet magna</div>
           <div className='HowItWorks_title'>
             Nullam varius pretium dolor eget ultrices. <br />
             Cras convallis feugiat accumsan. <br />

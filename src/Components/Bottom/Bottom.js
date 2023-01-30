@@ -19,7 +19,7 @@ export default function Bottom() {
             </div>
 
             <div className='wrap-bottom'>
-              <div className='wrap-bottom-buttons'>
+              <div className='wrap-bottom-buttons' id='download'>
                 <div className='googlePlay'></div>
                 <div className='appleStore'></div>
               </div>

@@ -4,9 +4,9 @@ import "./Prices.scss"
 export default function Prices() {
   return (
     <>
-      <div className='Price section' id="prices">
+      <div className='Price section'>
         <div className='priceWrap'>
-          <div className='Price_title-top'> Nunc elementum metus in facilisis</div>
+          <div className='Price_title-top' id="prices"> Nunc elementum metus in facilisis</div>
 
             <div className='Price-prices'>
 
