@@ -13,12 +13,10 @@ function App() {
       <div className='WrapperApp'>
         <header className='header'>
           <NavBarPC />
-
           <GetStarted />
           <HowItWorks />
           <Prices />
           <Bottom />
-
         </header>
       </div>
     </>

@@ -10,8 +10,6 @@
   height: 100vh;
   width: 100vw;
 
-
-  filter: drop-shadow(0 -20px 10px #eff0f3);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -22,6 +20,8 @@
   scroll-snap-align: start;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 10px 5px #000000;
+
 
   &::before {
     position: absolute;
@@ -32,7 +32,10 @@
     overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
+
+    filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
     background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 70%);
+
   }
 
   .wrap {
@@ -50,7 +53,7 @@
       flex-direction: column;
       text-align: center;
       justify-content: center;
-      color: #25292F;
+      color: #eff0f3;
       z-index: 1;
       height: 100vh;
       position: relative;
@@ -67,7 +70,7 @@
         text-transform: uppercase;
         padding: 0px;
         font-size: 35px;
-        color: #25292F;
+        color: #eff0f3d5;
         cursor: default;
 
         @include tablet {
@@ -80,7 +83,7 @@
         text-align: center;
         padding: 30px;
         font-size: 18px;
-        color: #25292F;
+        color: #eff0f3b6;
 
         @include tablet {
           font-size: 15px;

@@ -1,11 +1,17 @@
 $color_1: #25292f;
 $font-family_1: "Open Sans";
 
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
 .HowItWorks {
   display: flex;
   z-index: -1;
   width: 100vw;
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-20px) scale(3);
   height: 100vh;
   flex-direction: column;
   align-items: center;
@@ -15,110 +21,102 @@ $font-family_1: "Open Sans";
   background-position: center top;
   position: relative;
   scroll-snap-align: start;
-}
 
-.howWrap {
-  padding: 0 0 150px 0;
-}
-
-.HowItWorks_title-top {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 20px;
-  font-size: 25px;
-  font-family: $font-family_1;
-  color: $color_1;
-  cursor: default;
-}
-
-.HowItWorks_title {
-  text-align: center;
-  padding: 20px;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-family: $font-family_1;
-  color: $color_1;
-  cursor: default;
-}
-
-.HowItWorks_image2 {
-  height: 472px;
-  width: 728px;
-  background-image: url("https://i.ibb.co/F473rNt/556-ai.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.HowItWorks_image1 {
-  width: 40vw;
-  height: 100%;
-  background-image: url("https://i.ibb.co/4s2hK9K/14622-ai.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center top;
-  position: absolute;
-  left: -100px;
-  top: -50px;
-  transform: rotateY(180deg);
-}
-
-@media only screen and (max-width: 1200px) {
-  .HowItWorks_image1 {
-    width: 50vw;
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .HowItWorks {
-    height: min-content;
-    min-height: 100vh;
-    justify-content: center;
+  @include tablet {
+    margin: 300px;
+    transform: translateZ(-5px) scale(1.5);
 
   }
-
 
   .howWrap {
-    padding: 0;
-  }
-}
+    padding: 0 0 0px 0;
+
+    .HowItWorks_title-top {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px;
+      font-size: 25px;
+      font-family: $font-family_1;
+      color: $color_1;
+      cursor: default;
+    }
+
+    .HowItWorks_title {
+      text-align: center;
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-family: $font-family_1;
+      color: $color_1;
+      cursor: default;
+    }
 
 
-@media only screen and (max-width: 772px) {
-  .HowItWorks_image1 {
-    width: 60vw;
-    height: 100%;
-  }
+    .mainPageWhyUs-statistics-box {
+      margin: 0 0 50px 0
+    }
 
+    .mainPageWhyUs-statistics {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font: normal normal bold 22px Open Sans;
+    }
 
+    .mainPageWhyUs-statistics-weekends {
+      padding: 0 20px 0 20px;
+      color: rgba(255, 255, 255, 0.767);
+      max-width: 260px;
+    }
 
-  .HowItWorks_image2 {
-    height: 300px;
-    width: 500px;
-  }
-}
+    .icons {
+      color: #0000008f;
+      font-size: 80px;
+      padding: 0 0 40px 0;
+      transition-duration: 500ms;
+      margin: 60px 0 0 0;
 
-@media only screen and (max-width: 520px) {
-  .HowItWorks_image1 {
-    width: 90vw;
-    height: 100%;
-  }
+    }
 
-  .HowItWorks_image2 {
-    height: 250px;
-    width: 400px;
-  }
-}
+    .icons:hover {
+      color: #000000d5;
+      transition-duration: 500ms;
+    }
 
-@media only screen and (max-width: 420px) {
-  .HowItWorks_image1 {
-    width: 80vw;
-    height: 100%;
-  }
+    .mainPageWhyUs-statistics-time {
+      padding: 0 20px 0 20px;
+      color: rgba(255, 255, 255, 0.767);
+      max-width: 260px;
+    }
 
-  .HowItWorks_image2 {
-    height: 250px;
-    width: 300px;
+    .mainPageWhyUs-statistics-perDay {
+      padding: 0 20px 0 20px;
+      color: rgba(255, 255, 255, 0.767);
+      max-width: 260px;
+    }
+
+    .mainPageWhyUs-arrow {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      margin: 10px 0 0 0;
+    }
+
+    .mainPageWhyUs-arrow a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.527);
+      transition-duration: 500ms;
+      position: relative;
+      top: 0;
+      margin: 50px 0 0 0;
+    }
+
+    .mainPageWhyUs-arrow a:hover {
+      transition-duration: 500ms;
+      color: rgb(255, 255, 255);
+      position: relative;
+      top: 5px;
+    }
   }
 }
