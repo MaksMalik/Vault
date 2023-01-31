@@ -6,7 +6,6 @@ export default function Bottom() {
     <>
         <div className='bottom section' id="bottom">
           <div className='wrap'>
-          
             <div className='wrap-top'>
               <div className='bottom_title-top'>Proin nec ante eros. </div>
               <div className='bottom_title'>
@@ -17,7 +16,6 @@ export default function Bottom() {
                 Nam faucibus maximus ipsum, ac pellentesque urna hendrerit non. 
               </div>
             </div>
-
             <div className='wrap-bottom'>
               <div className='wrap-bottom-buttons' id='download'>
                 <div className='googlePlay'></div>
@@ -30,7 +28,6 @@ export default function Bottom() {
                 © 2023 Vault. All Rights Reserved.
               </div>
             </div>
-
           </div>
         </div>
     </>
