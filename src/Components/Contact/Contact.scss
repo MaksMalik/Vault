@@ -68,6 +68,34 @@ $font-family_1: "Open Sans";
     }
   }
 
+  input::-webkit-input-placeholder {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+    text-transform: uppercase !important;
+  }
+
+  input::-moz-placeholder {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+    text-transform: uppercase !important;
+  }
+
+  input:-ms-input-placeholder {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+    text-transform: uppercase !important;
+  }
+
+  input::-ms-input-placeholder {
+    color: #48605A !important;
+    border-color: red !important;
+    font-family: Open Sans !important;
+    text-transform: uppercase !important;
+  }
+
   input::placeholder {
     color: #48605A !important;
     border-color: red !important;

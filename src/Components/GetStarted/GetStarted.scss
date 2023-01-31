@@ -28,7 +28,8 @@ $font-family_1: "Open Sans";
   overflow: hidden;
   text-transform: uppercase;
   background-image: url("../../images/getStartedBackground2.png");
-  filter: drop-shadow(0 20px 10px #eff0f3);
+  -webkit-filter: drop-shadow(0 20px 10px #eff0f3);
+          filter: drop-shadow(0 20px 10px #eff0f3);
 
   &::before {
     position: absolute;
@@ -41,7 +42,8 @@ $font-family_1: "Open Sans";
     overflow-x: hidden;
 
     background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 90%);
-    filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
+    -webkit-filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
+            filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
   }
 
   .getStarted-wrap {

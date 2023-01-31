@@ -33,7 +33,9 @@
     overflow-y: hidden;
     overflow-x: hidden;
 
-    filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
+    -webkit-filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
+
+            filter: brightness(0) saturate(100%) invert(31%) sepia(11%) saturate(937%) hue-rotate(120deg) brightness(88%) contrast(82%);
     background: linear-gradient(180deg, #eff0f3 0%, rgba(255, 255, 255, 0) 70%);
 
   }

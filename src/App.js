@@ -17,7 +17,7 @@ function App() {
           <GetStarted />
           <HowItWorks />
           <Prices />
-          <Contact/>
+          <Contact />
           <Bottom />
         </header>
       </div>

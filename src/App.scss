@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
   overflow-y: scroll;
 
-
   header {
     position: absolute;
     display: flex;
@@ -18,7 +17,5 @@
     transform-style: preserve-3d;
     flex-direction: column;
     z-index: -1;
-
-
   }
 }

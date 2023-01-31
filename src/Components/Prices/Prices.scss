@@ -13,6 +13,8 @@ $font-family_1: "Open Sans";
   width: 100vw;
   transform: translateZ(-5px) scale(1.5);
   min-height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   flex-direction: column;
   align-items: center;
@@ -28,6 +30,8 @@ $font-family_1: "Open Sans";
   @include tablet {
     transform: none;
     transform: translateY(-100px);
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     margin: 0;
   }
@@ -173,13 +177,15 @@ $font-family_1: "Open Sans";
 
 .hiddenOffer {
   opacity: 0;
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   transition: all 1s;
 }
 
 .showOffer {
   opacity: 1;
-  filter: blur(0);
+  -webkit-filter: blur(0);
+          filter: blur(0);
 }
 
 @media(prefers-reduced-motion) {

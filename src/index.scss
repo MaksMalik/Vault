@@ -2,12 +2,6 @@ $background-color_1: #EFF0F3;
 $background-color_2: #25292F;
 $background-color_3: #EFF0F3;
 
-@font-face {
-  font-family: 'fussionregular';
-  src: url('./fonts/fussion-3zgaz-webfont.woff2') format('woff2'), url('./fonts/fussion-3zgaz-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @mixin tablet {
   @media screen and (max-width: 768px) {
